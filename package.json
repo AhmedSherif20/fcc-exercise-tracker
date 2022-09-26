@@ -6,6 +6,9 @@
 	"scripts": {
 		"start": "node index.js"
 	},
+	"engines": {
+		"node": "14.17.3"
+	},
 	"dependencies": {
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",

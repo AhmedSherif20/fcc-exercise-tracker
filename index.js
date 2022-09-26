@@ -120,6 +120,9 @@ app.get("/api/users/:_id/logs", async (req, res, next) => {
       .find(filter, { _id: 0, userId: 0 })
       .limit(limit)
       .then((value) => {
+        console.log("value", value[0].date);
+        console.log("value 2", value[0].date.toString());
+
         res.json({
           _id: checkedUser._id,
           username: checkedUser.username,
